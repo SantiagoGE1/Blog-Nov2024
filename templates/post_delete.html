@@ -1,0 +1,10 @@
+
+
+
+<form method="post">
+    {% csrf_token %}
+    <P>Are u sure about that?</P>
+    <input type="submit" value="Yes">
+    <a href="{% url 'post-detail' post.pk %}">No</a>
+
+</form>
